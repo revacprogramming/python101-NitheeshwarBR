@@ -1,0 +1,1 @@
+print("The pay for",hours,"Hours and ",rate,"rate per hour is",pay)

@@ -10,6 +10,8 @@ rt=input("Enter rate per hour\n")
 rate=float(rt)
 if hours<=40:
     pay=hours*rate
+    print("The pay for",hours,"Hours and ",rate,"rate per hour is",pay)
 elif hours>40.0:
-    pay=hours*rate+(hours-40.0)*1.5*rate
+    pay=40.0*rate+(hours-40.0)*1.5*rate
+    print("The pay for",hours,"Hours and ",rate,"rate per hour is",pay)
 
