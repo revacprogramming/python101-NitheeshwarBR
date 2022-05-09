@@ -6,17 +6,18 @@
 #   You should use input to read a string and float() to convert the string to a number. 
 #   Do not worry about error checking the user input unless you want to - you can assume the user types numbers properly.
 #  Do not name your variable sum or use the sum() function.
+hours=(input("Enter hours:\t"))
+rate=(input("Enter rate per hour:\t"))
 
 def computepay(h, r):
-   h=float(hrs)
-   r=float(rte)
+   h=float(hours)
+   r=float(rate)
    if h>40:
        pay=40*r+(h-40)*1.5*r
        return pay
    else:
        pay=h*r
        return pay
-hrs = float(input("Enter hours? "))
-rte = float(input("Enter rate per hour? "))
-p = computepay(hrs, rte)
-print("Pay", p)
+
+p = computepay(hours,rate)
+print("The pay for",hours,"Hours and",rate,"rate per hour is",p)
