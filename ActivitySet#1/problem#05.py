@@ -2,7 +2,8 @@
 
 
 def computepay(h, r):
-    pass  # ...
+    pay=h*r
+    return pay
 
 
 hrs = float(input("Enter hours? "))
