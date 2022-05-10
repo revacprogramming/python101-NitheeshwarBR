@@ -16,7 +16,6 @@ while True:
             largest=n
         elif smallest==0 or n<smallest:
             smallest=n
-        print(num)
     except:
         print("Invalid input\n")
 print("Maximum", largest)
