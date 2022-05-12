@@ -9,7 +9,7 @@ def lists():
     lines=list()
     for line in file:
         words=line.split()
-        [lines.append(items) for items in words if items not in lines] #line comprenhension       
+        [lines.append(i) for i in words if i not in lines] #line comprenhension       
     lines.sort()
     print(lines)
 lists()
