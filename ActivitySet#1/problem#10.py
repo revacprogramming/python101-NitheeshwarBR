@@ -1,3 +1,4 @@
 # Dictionaries
 
-filename = "dataset/mbox-short.txt"
+# filename = "dataset/mbox-short.txt"
+

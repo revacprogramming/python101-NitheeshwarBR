@@ -11,8 +11,11 @@ add=0
 for line in file:
     if line.startswith('X-DSPAM-Confidence:'):
         count=count+1
-        num=line.find("0")
-        t=float(line[num:])
-        add=add+t
+        # num=line.find("0")
+        # t=line[num:]
+        # add=add+float(t)
+        words=line.split()
+        num=words[1]
+        add=add+float(num)
 average=add/count
 print("Average spam confidence:",average)
